@@ -22,7 +22,12 @@ pipeline {
 
           stage("Server disk usage"){
             steps{
-                sh "df -h"
+                sh 'df -h'
+            }
+          }
+           stage("cpu usage"){
+            steps{
+                sh 'lscpu'
             }
           }
 
