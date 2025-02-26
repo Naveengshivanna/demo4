@@ -2,13 +2,7 @@ pipeline {
     agent any
 
        stages{
-          stage("Server Details"){
-            steps{
-                echo "Hello world"
-            }
-          }
-
-          stage("Server Details"){
+           stage("Server Details"){
             steps{
                 sh 'uname -a'
             }
